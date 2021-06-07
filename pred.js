@@ -48,6 +48,6 @@
            context.fillText(text,start[0]+5,start[1]+20);
             }
            }
-        setTimeout(draw,100,video,context,width,height);
+        setTimeout(draw,250,video,context,width,height);
     }
 })();
