@@ -1,6 +1,6 @@
-# yxlao.github.io
+# sanskar107.github.io
 
-Repository for [yxlao.github.io](https://yxlao.github.io).
+Repository for [sanskar107.github.io](https://sanskar107.github.io).
 
 ## Acknowledgments
 
