@@ -330,17 +330,29 @@
                 </td>
               </tr>
 
-              <tr>
+              <tr onmouseout="igvc_stop()" onmouseover="igvc_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
-                    <div class="two" id="open3d_video">
+                    <div class="two" id="igvc_image">
                       <a href="https://www.youtube.com/watch?v=nu-RGhk0T80" target="_blank">
-                        <img src="https://img.youtube.com/vi/nu-RGhk0T80/maxresdefault.jpg" width="200" alt="Video Thumbnail">
+                        <img src="images/igvc_hover.png" width="160">
                       </a>
                     </div>
+                    <a href="http://www.open3d.org/docs/latest/tutorial/t_reconstruction_system/index.html">
+                      <img src="images/igvc.jpg" width="160">
+                    </a>
                   </div>
+                  <script type="text/javascript">
+                    function igvc_start() {
+                      document.getElementById("igvc_image").style.opacity = "0";
+                    }
+                    function igvc_stop() {
+                      document.getElementById("igvc_image").style.opacity = "1";
+                    }
+                    igvc_stop()
+                  </script>
                 </td>
-                <td style="padding:40px;width:75%;vertical-align:top">
+                <td style="padding:20px;width:75%;vertical-align:top">
                   <a href="https://github.com/isl-org/Open3D-ML">
                     <span class="papertitle">AGV: Eklavya 6.0</span>
                   </a>
@@ -376,7 +388,7 @@
                     function agv_stop() {
                       document.getElementById("agv_image").style.opacity = "1";
                     }
-                    open3d_stop()
+                    agv_stop()
                   </script>
                 <td style="padding:40px;width:75%;vertical-align:top">
                   <a href="http://www.agv.iitkgp.ac.in/">
